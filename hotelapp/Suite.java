@@ -2,12 +2,12 @@ package com.mycompany.hotelapp;
 //Suite     
 class Suite extends Habitacion {
     private boolean tieneJacuzzi;
-    private boolean tieneVistaMar;
+    private boolean vistaMar;
     
-    public Suite(int numero, double precioPorNoche, boolean tieneJacuzzi, boolean tieneVistaMar) {
+    public Suite(int numero, double precioPorNoche, boolean tieneJacuzzi, boolean vistaMar) {
         super(numero, precioPorNoche);
         this.tieneJacuzzi = tieneJacuzzi;
-        this.tieneVistaMar = tieneVistaMar;
+        this.vistaMar = vistaMar;
     }
     
     @Override
@@ -15,7 +15,7 @@ class Suite extends Habitacion {
         System.out.println("=== SUITE DE LUJO ===");
         super.mostrarInfo();
         System.out.println("Jacuzzi: " + (tieneJacuzzi ? "Si" : "No"));
-        System.out.println("Vista al mar: " + (tieneVistaMar ? "Si" : "No"));
+        System.out.println("Vista al mar: " + (vistaMar ? "Si" : "No"));
         System.out.println("======================");
     }
 }
