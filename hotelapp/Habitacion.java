@@ -13,7 +13,7 @@ class Habitacion {
         this.ocupada = false; // Por defecto está libre
     }
     
-    // Método para mostrar información general
+    // Metodo para mostrar informacion general
     public void mostrarInfo() {
         String estado = ocupada ? "Ocupada" : "Libre";
         System.out.println("Habitacion #" + numero);
@@ -21,7 +21,7 @@ class Habitacion {
         System.out.println("Estado: " + estado);
     }
     
-    // Método para reservar la habitación
+    // Metodo para reservar la habitacion
     public void reservar() {
         if (!ocupada) {
             ocupada = true;
@@ -31,7 +31,7 @@ class Habitacion {
         }
     }
     
-    // Método para liberar la habitación
+    // Metodo para liberar la habitacion
     public void liberar() {
         if (ocupada) {
             ocupada = false;
@@ -41,7 +41,7 @@ class Habitacion {
         }
     }
     
-    // Método para calcular costo total
+    // Metodo para calcular costo total
     public double calcularCosto(int noches) {
         return precioPorNoche * noches;
     }
@@ -59,3 +59,4 @@ class Habitacion {
         return precioPorNoche;
     }
 }
+
